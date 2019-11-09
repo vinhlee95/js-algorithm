@@ -72,16 +72,74 @@ class DoubleLinkedList {
 		}
 
 		if(this.head === this.tail) {
-			this.head = null
-			this.tail = null
+			this.resetList()
 			return
 		}
 
 		this.head = this.head.next
 		this.head.prev = null // unlink old head
+		this.size --
+	}
 
-		if(!this.isEmpty) {
-			this.size --
+	/**
+	 * Delete tail
+	 *
+	 */
+	deleteTail() {
+		if(!this.tail) {
+			return
 		}
+
+		if(this.head === this.tail) {
+			this.resetList()
+			return
+		}
+
+		this.tail = this.tail.prev
+		this.tail.next = null
+		this.size --
+	}
+
+	/**
+	 * Search from head
+	 *
+	 */
+	searchFromHead(value) {
+		let currentHead = this.head
+		while(currentHead.next) {
+			if(currentHead.value === value) {
+				return true
+			}
+
+			currentHead = currentHead.next
+		}
+
+		return false
+	}
+
+	/**
+	 * Search from tail
+	 *
+	 */
+	searchFromTail(value) {
+		let currentTail = this.tail
+		while(currentTail.prev) {
+			if(currentTail.value === value) {
+				return true
+			}
+
+			currentTail = currentTail.prev
+		}
+
+		return false
+	}
+
+	/**
+	 * Helpers method
+	 *
+	 */
+	resetList() {
+		this.head = null
+		this.tail = null
 	}
 }
