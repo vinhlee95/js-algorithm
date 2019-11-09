@@ -22,6 +22,7 @@ class DoubleLinkedList {
 
 	/**
 	 * ADD TO HEAD
+	 * Time complexity: O(1)
 	 *
  	*/
 	addToHead(value) {
@@ -44,6 +45,7 @@ class DoubleLinkedList {
 
 	/**
 	 * Add to tail
+	 * Time complexity: O(1)
 	 *
 	 */
 	addToTail(value) {
@@ -64,6 +66,7 @@ class DoubleLinkedList {
 
 	/**
 	 * Delete head
+	 * Time complexity: O(1)
 	 *
 	 */
 	deleteHead() {
@@ -83,6 +86,7 @@ class DoubleLinkedList {
 
 	/**
 	 * Delete tail
+	 * Time complexity: O(1)
 	 *
 	 */
 	deleteTail() {
@@ -102,6 +106,7 @@ class DoubleLinkedList {
 
 	/**
 	 * Search from head
+	 * Time complexity: O(n)
 	 *
 	 */
 	searchFromHead(value) {
@@ -119,6 +124,7 @@ class DoubleLinkedList {
 
 	/**
 	 * Search from tail
+	 * Time complexity: O(n)
 	 *
 	 */
 	searchFromTail(value) {
