@@ -8,7 +8,6 @@ class SinglyLinkedListNode {
 	constructor(data) {
 		this.data = data
 		this.next = null
-		this.prev = null
 	}
 }
 
@@ -35,9 +34,9 @@ class LinkedList {
 		if(this.head === null) {
 			this.head = new SinglyLinkedListNode(value)
 		} else {
-			const temp = this.tail
-			this.tail = new SinglyLinkedListNode(value)
-			this.tail.prev = temp
+			const temp = this.tail // current tail
+			this.tail = new SinglyLinkedListNode(value) // new tail
+			temp.next = this.tail // connect old tail to new tail
 		}
 	}
 }
