@@ -62,7 +62,7 @@ class Stack {
 	/**
 	 * Search an item in a stack
 	 *
-	 * @param {Object} stack
+	 * @param {Object} value
 	 * @return Node
 	 */
 	search(value) {
@@ -72,8 +72,6 @@ class Stack {
 			if(stackClone.delete() === value) {
 				return true
 			}
-
-			stackClone.delete()
 		}
 
 		return false
