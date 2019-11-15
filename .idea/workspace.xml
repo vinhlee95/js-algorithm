@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30298721-d9b3-4a8c-872c-611bcaa71e53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stack/h-stack/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stack/h-stack/stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queue/h-queue/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queue/h-queue/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,28 +27,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="9" />
-          <entry key="md" value="4" />
+          <entry key="js" value="11" />
+          <entry key="md" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="9" />
-          <entry key="Markdown" value="4" />
+          <entry key="JavaScript" value="11" />
+          <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="5" />
-          <entry key="js" value="3192" />
-          <entry key="md" value="779" />
+          <entry key="js" value="3378" />
+          <entry key="md" value="1033" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="3192" />
-          <entry key="Markdown" value="779" />
+          <entry key="JavaScript" value="3378" />
+          <entry key="Markdown" value="1033" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -56,10 +57,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stack/h-stack/stack.js">
+        <entry file="file://$PROJECT_DIR$/queue/h-queue/queue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+            <state relative-caret-position="306">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queue/h-queue/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="34">
+                <caret line="1" column="213" selection-start-line="1" selection-start-column="213" selection-end-line="1" selection-end-column="213" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -68,19 +81,10 @@
         <entry file="file://$PROJECT_DIR$/stack/h-stack/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <first_editor>
+                <caret selection-end-line="10" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stack/v-stack/stack.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -97,8 +101,10 @@
         <option value="$PROJECT_DIR$/linked-list/h-linked-list/linked-list.js" />
         <option value="$PROJECT_DIR$/linked-list/h-linked-list/index.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/stack/h-stack/index.md" />
         <option value="$PROJECT_DIR$/stack/h-stack/stack.js" />
+        <option value="$PROJECT_DIR$/stack/h-stack/index.md" />
+        <option value="$PROJECT_DIR$/queue/h-queue/index.md" />
+        <option value="$PROJECT_DIR$/queue/h-queue/queue.js" />
       </list>
     </option>
   </component>
@@ -141,6 +147,18 @@
               <item name="js-algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="h-queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="v-queue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="js-algorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -194,12 +212,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573451086700</updated>
       <workItem from="1573451087934" duration="3405000" />
-      <workItem from="1573795976084" duration="4111000" />
+      <workItem from="1573795976084" duration="4888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7516000" />
+    <option name="totallyTimeSpent" value="8293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -271,9 +289,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stack/h-stack/stack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/queue/v-queue/queue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1156" />
+        <state relative-caret-position="-1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stack/v-stack/stack.js">
@@ -286,17 +311,27 @@
     <entry file="file://$PROJECT_DIR$/stack/h-stack/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <first_editor>
+            <caret selection-end-line="10" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stack/h-stack/stack.js">
+    <entry file="file://$PROJECT_DIR$/queue/h-queue/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="1" column="213" selection-start-line="1" selection-start-column="213" selection-end-line="1" selection-end-column="213" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/h-queue/queue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
