@@ -87,5 +87,64 @@ class LinkedList {
 
     return currentNode
   }
+
+  /**
+   * Remove the value at the front of the list
+   *
+   * @returns removed value
+   */
+  pop() {
+    const removedValue = this.head ? this.head.value : null
+    this.head = this.head ? this.head.next : null
+
+    if (this.isEmpty()) {
+      this.tail = null
+    }
+
+    return removedValue
+  }
+
+  /**
+   * Remove the value at the last node
+   *
+   * @returns removed value
+   */
+  removeLast() {
+
+    if (this.isEmpty()) {
+      return null
+    }
+
+    // If only one node then removeLast is equivalent to pop
+    if (this.head.next === null) {
+      return this.pop()
+    }
+
+    // Keep searching for a next node until current.next is null then current is the last node of the list
+    let prev = this.head
+    let current = this.head
+    let next = current.next
+
+    while (next !== null) {
+      prev = current
+      current = next
+      next = current.next
+    }
+
+    prev.next = null
+    this.tail = prev
+
+    return current.value
+  }
+
+  removeAfter(node) {
+    if (node.next === this.tail) {
+      this.tail = node
+    }
+
+    node.next = node.next ? node.next.next : null
+
+    return node.next ? node.next.value : null
+  }
 }
 
