@@ -29,7 +29,7 @@ class Queue {
 		return this.array.push(value)
 	}
 
-	// DELETION: implemented by shift() - O(1)
+	// DELETION: implemented by shift() - O(n)
 	dequeue() {
 		return this.array.shift()
 	}
@@ -79,6 +79,18 @@ class Queue {
 
 		return false
 	}
+
+	printAll() {
+		const clone = this.clone()
+		const values = []
+
+		while(!clone.isEmpty()) {
+			const item = clone.dequeue()
+			values.push(item)
+		}
+
+		console.log(values)
+	}
 }
 
 const myQueue = new Queue([1,2,3,4])
@@ -86,3 +98,4 @@ console.log('Peek', myQueue.peek())
 console.log('2th node is', myQueue.accessNthNode(2))
 console.log('Has 2', myQueue.search(2))
 console.log('Has 5', myQueue.search(5))
+myQueue.printAll()

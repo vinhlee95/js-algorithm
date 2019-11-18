@@ -20,6 +20,21 @@ class DoubleLinkedList {
 		this.isEmpty = this.size === 0
 	}
 
+	printAll() {
+		let values = []
+		let previous = this.head
+		let current = this.head
+
+		while(current.next === null) {
+			const value = current.value
+			values.push(value)
+
+			current = current.next
+		}
+
+		console.log(values)
+	}
+
 	/**
 	 * ADD TO HEAD
 	 * Time complexity: O(1)
@@ -38,27 +53,6 @@ class DoubleLinkedList {
 
 			// Change head
 			this.head = newNode
-		}
-
-		this.size ++
-	}
-
-	/**
-	 * Add to tail
-	 * Time complexity: O(1)
-	 *
-	 */
-	addToTail(value) {
-		let newNode = new DoubleLinkedListNode(value)
-
-		if(!this.tail) {
-			this.tail = new Node()
-			this.head = this.tail
-		} else {
-			// Link new node with current tail
-			newNode.prev = this.tail
-			this.tail.next = newNode
-			this.tail = newNode
 		}
 
 		this.size ++
@@ -149,3 +143,12 @@ class DoubleLinkedList {
 		this.tail = null
 	}
 }
+
+const myList = new DoubleLinkedList()
+myList.addToTail(1)
+myList.addToTail(2)
+myList.addToTail(3)
+myList.addToTail(4)
+
+console.log(myList)
+

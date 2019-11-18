@@ -76,6 +76,17 @@ class Stack {
 
 		return false
 	}
+
+	printAll() {
+		const stackClone = this.clone()
+		let values = []
+		while(!stackClone.isEmpty()) {
+			const item = stackClone.delete()
+			values.push(item)
+		}
+
+		console.log(values)
+	}
 }
 
 const myStack = new Stack([1,2,3,4])
@@ -83,3 +94,5 @@ console.log('Peek', myStack.peek())
 console.log('2th node from the last is', myStack.accessNthNode(2))
 console.log('Has 2', myStack.search(2))
 console.log('Has 5', myStack.search(5))
+
+myStack.printAll()
